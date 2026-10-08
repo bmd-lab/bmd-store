@@ -1,12 +1,12 @@
 # Cluster
 
 Publicly shareable operational guidance for TAU PowerSLURM. The university
-controls the cluster; BMDex records the current lab working defaults and
+controls the cluster; bmd-store records the current lab working defaults and
 copyable files.
 
 These scripts and notes are supporting/manual operational assets. They do not
-define BMD Compute runtime behavior unless BMD Compute explicitly consumes
-them; BMD Compute owns its deployed submission and execution policy for the
+define bmd-compute runtime behavior unless bmd-compute explicitly consumes
+them; bmd-compute owns its deployed submission and execution policy for the
 core VASP data-generation pipeline.
 
 ## Bash Scripts
@@ -68,7 +68,7 @@ bash cluster/check_power_environment.sh
 - Run from `"$SLURM_SUBMIT_DIR"` inside job scripts.
 - Load required modules inside each submitted script.
 - Use `squeue -u "$USER"` for queue checks.
-- Keep `POTCAR.spec` in BMDex and generate licensed `POTCAR` files only in a
+- Keep `POTCAR.spec` in bmd-store and generate licensed `POTCAR` files only in a
   licensed VASP environment.
 - Treat resource requests as starting points, not convergence validation.
 - Recheck this directory when accounts, partitions, modules, filesystem paths,

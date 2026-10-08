@@ -1,25 +1,27 @@
-# BMDex
+# bmd-store
 
-BMDex is the BMD Lab repository for curated supporting scientific data,
-reference evidence, and non-core scientific tools used in reproducible
-computational materials research.
+bmd-store is the Burton Materials Discovery Lab repository at Tel Aviv
+University for curated supporting scientific data, reference evidence, and
+non-core scientific tools used in reproducible computational materials
+research.
 
 The repository is public. It contains material that is appropriate to share and
 reuse, not private research storage or deployment configuration.
 
-## Where BMDex Fits
+## Where bmd-store Fits
 
-BMDex complements the public `tutorials` repository and the other BMD tools:
+bmd-store complements the public `bmd-help` repository and the other BMD tools:
 
-- `tutorials` teaches public concepts, onboarding, and basic workflows.
-- BMDex curates scientific datasets, contextual reference knowledge, validated
+- `bmd-help` teaches public concepts, onboarding, and basic workflows.
+- bmd-store curates scientific datasets, contextual reference knowledge, validated
   evidence, reusable utilities, and publicly shareable infrastructure notes.
-- BMD Compute owns methodology and implementation that determine how BMD
+- bmd-compute owns methodology and implementation that determine how BMD
   generates VASP calculations.
-- BMD Agent consumes BMDex producer interfaces and coordinates evidence without
-  duplicating the authority of BMDex or BMD Compute.
+- bmd-check consumes bmd-store producer interfaces and evidence to inspect,
+  diagnose, explain, and advise without duplicating the authority of bmd-store
+  or bmd-compute.
 
-BMDex is designed for graduate students and researchers in materials science.
+bmd-store is designed for graduate students and researchers in materials science.
 Useful research actions should stay visible; repository mechanics and metadata
 should remain supporting details.
 
@@ -30,10 +32,10 @@ should remain supporting details.
 - validated workflow evidence and reproducible examples;
 - reusable non-core scientific tools and transformations;
 - publicly shareable HPC operational guidance; and
-- templates and supporting standards outside the BMD Compute VASP generation
+- templates and supporting standards outside the bmd-compute VASP generation
   pipeline.
 
-The following do not belong in BMDex:
+The following do not belong in bmd-store:
 
 - runtime calculation state, large generated outputs, or active project dumps;
 - credentials, private keys, API tokens, or deployment-local configuration;
@@ -63,8 +65,8 @@ current producer syntax; Python 3.12 is the routinely verified development
 environment.
 
 ```bash
-git clone https://github.com/bmd-lab/BMDex.git
-cd BMDex
+git clone https://github.com/bmd-lab/bmd-store.git
+cd bmd-store
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -84,7 +86,7 @@ python -m pip install -r requirements.txt
 researcher-facing scripts. It is intentionally not a lock file. Record exact
 package versions when they are material to a scientific result.
 
-The current Agent-facing producers and their tests use only the Python standard
+The current bmd-check-facing producers and their tests use only the Python standard
 library. A contributor working only on those interfaces can run the tests before
 installing the scientific stack:
 
@@ -105,7 +107,7 @@ user's external `pybliometrics` configuration.
 
 ## Producer Interfaces
 
-BMD Agent consumes fixed JSON stdin/stdout interfaces from a repository
+bmd-check consumes fixed JSON stdin/stdout interfaces from a repository
 checkout. These commands are also useful for development and debugging. Run
 them from the repository root and keep stdout machine-readable.
 
@@ -122,7 +124,7 @@ printf '{"query":{"code":"VASP","calculation_family":"hybrid_functional","functi
 ```
 
 These producers return curated contextual evidence. They do not inspect or
-diagnose live calculations, change scientific data, or define BMD Compute
+diagnose live calculations, change scientific data, or define bmd-compute
 methodology. Their existing schemas, record IDs, versions, and query behavior
 are compatibility contracts.
 
@@ -137,7 +139,7 @@ python tools/composition/electroneutrality/generate_ternaries.py
 python tools/structure_prototypes/abundance_rank.py
 ```
 
-Cluster scripts are intended to run from a normal BMDex checkout on the cluster;
+Cluster scripts are intended to run from a normal bmd-store checkout on the cluster;
 Codex is not required there. Review each script and the local cluster policy
 before submission.
 
@@ -158,13 +160,13 @@ that must never be committed.
 
 ## License and Sources
 
-BMDex repository-owned source code and documentation are available under the
+bmd-store repository-owned source code and documentation are available under the
 MIT License; see `LICENSE`. Third-party dependencies remain under their own
 licenses. Source-derived factual datasets retain the attribution documented
 beside each dataset, and the MIT License does not relicense the cited source
 publications.
 
-BMDex does not distribute or license VASP executables, VASP source code,
+bmd-store does not distribute or license VASP executables, VASP source code,
 `POTCAR` files, or PAW potential contents. Repository examples use
 `POTCAR.spec` files so users can generate potentials only in an appropriately
 licensed environment.

@@ -27,7 +27,7 @@ Bulk structural relaxation:
 
 ## Operational Context
 
-This example is written for the current BMD Lab VASP-on-SLURM workflow. The
+This example is written for the current Burton Materials Discovery Lab VASP-on-SLURM workflow. The
 submission script records the cluster partition, account, module, and launch
 conventions used when the example was curated. Those details may need updating
 when university-managed cluster policy changes.

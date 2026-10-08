@@ -1,6 +1,6 @@
 # Composition Tools
 
-BMD Lab computational assets for formula generation, oxidation-state
+Burton Materials Discovery Lab computational assets for formula generation, oxidation-state
 reasoning, and chemically constrained candidate screening.
 
 Current entries include:
@@ -12,7 +12,7 @@ Current entries include:
 
 ## Composition Context Producer
 
-`context_producer.py` is the first narrow BMDex-owned machine-readable producer
+`context_producer.py` is the first narrow bmd-store-owned machine-readable producer
 for local composition context. It reads one JSON object from stdin and writes
 one compact JSON evidence fragment to stdout:
 
