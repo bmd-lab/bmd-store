@@ -27,7 +27,7 @@ Electroneutrality is a necessary but insufficient condition for chemical
 realizability. Generated formulas still require structural, thermodynamic, and
 electronic validation where relevant.
 
-These scripts preserve the core practical workflow from the BMD Lab
+These scripts preserve the core practical workflow from the Burton Materials Discovery Lab
 `electroneutral_match` work without turning it into a larger software framework.
 
 ## Layout

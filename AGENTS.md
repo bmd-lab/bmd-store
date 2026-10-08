@@ -1,32 +1,33 @@
-# BMDex Agent Instructions
+# bmd-store Agent Instructions
 
-BMDex is the public curated scientific-data, evidence, and supporting-tools
-repository of the BMD Lab.
+bmd-store is the public curated scientific-data, evidence, and supporting-tools
+repository of the Burton Materials Discovery Lab.
 
-BMDex's canonical ecosystem role is BMD-curated supporting scientific data,
-reference evidence, and non-core scientific tools outside the BMD Compute VASP
+bmd-store's canonical ecosystem role is BMD-curated supporting scientific data,
+reference evidence, and non-core scientific tools outside the bmd-compute VASP
 data-generation pipeline.
 
 If a capability determines how BMD generates a VASP calculation, its
-authoritative implementation belongs in BMD Compute. If it provides supporting
+authoritative implementation belongs in bmd-compute. If it provides supporting
 scientific data or tooling but is not part of the core VASP data-generation
-pipeline, it belongs in BMDex. BMD Agent consumes and coordinates these
-capabilities without duplicating their authority.
+pipeline, it belongs in bmd-store. bmd-check consumes exposed capabilities and
+evidence to inspect, diagnose, explain, and advise without duplicating their
+authority.
 
-BMDex complements the public `tutorials` repository:
-- `tutorials` focuses on public educational knowledge, onboarding material, and
+bmd-store complements the public `bmd-help` repository:
+- `bmd-help` focuses on public educational knowledge, onboarding material, and
   conceptual guidance
-- BMDex focuses on curated scientific reference data, publicly shareable
+- bmd-store focuses on curated scientific reference data, publicly shareable
   infrastructure notes, and lab-controlled computational assets
 
 Intended access model:
-- public tutorials introduce concepts and basic workflows
-- the public GitHub repository or website is the first curated BMDex entry point
-- cluster execution uses a normal git checkout or pull of BMDex on the cluster
+- public `bmd-help` material introduces concepts and basic workflows
+- the public GitHub repository or website is the first curated bmd-store entry point
+- cluster execution uses a normal git checkout or pull of bmd-store on the cluster
 - Codex is used from a laptop or workstation checkout for curation, review, and extension
 
 Do not assume Codex is installed on the cluster. Cluster-facing tools should be
-directly runnable or copyable from a cluster-side BMDex checkout.
+directly runnable or copyable from a cluster-side bmd-store checkout.
 
 Student audience assumption:
 - most students are materials scientists, not software engineers
@@ -47,24 +48,24 @@ Primary focus areas:
 
 ## Repository Philosophy
 
-BMDex is intended to function as:
+bmd-store is intended to function as:
 - a publicly shareable operational reference for externally managed HPC systems
 - a curated home for lab-controlled computational assets
 - and a long-term operational memory system for the research group
 
 ## Research-Group Information Model
 
-BMD Lab computational information has three broad classes:
+Burton Materials Discovery Lab computational information has three broad classes:
 - knowledge: public-facing concepts, explanations, tutorials, and onboarding
-  material. This should primarily live in the public `tutorials` repository and
+  material. This should primarily live in the public `bmd-help` repository and
   group tutorial pages.
 - infrastructure: publicly shareable operational information about university-managed
   systems such as SLURM, cluster accounts, modules, partitions, filesystems, and
-  VASP execution environments. BMDex may document current practice, but the BMD
+  VASP execution environments. bmd-store may document current practice, but the BMD
   Lab does not control the underlying infrastructure.
 - assets: lab-controlled tools, codes, scripts, datasets, templates,
   examples, reference evidence, non-core workflow aids, and supporting
-  standards. These are the parts BMDex owns, adapts, and maintains.
+  standards. These are the parts bmd-store owns, adapts, and maintains.
 
 Do not blur these boundaries. Move broadly teachable material toward public
 tutorials, record infrastructure assumptions with explicit limitations, and keep
@@ -97,7 +98,7 @@ Distinguish clearly between:
 Metadata should support maintainers underneath the user experience. Do not make
 metadata, schemas, or repository mechanics the first thing students encounter.
 
-Do not add BMDex metadata sidecars such as `bmdex.yaml` or
+Do not add bmd-store metadata sidecars such as `bmdex.yaml` or
 `*.bmdex.yaml` unless explicitly asked. Preserve useful curation information in
 the place students and maintainers will naturally read:
 - human-facing provenance, validation state, limitations, and usage notes belong
@@ -127,20 +128,20 @@ When integrating contributions:
 - Always create new feature branches from current `main`.
 - Feature branches are temporary.
 - After a feature branch is merged, delete it locally and remotely.
-- Assume BMDex normally has only `main` and at most one active feature branch.
+- Assume bmd-store normally has only `main` and at most one active feature branch.
 
 ## Repository Boundaries
 
-BMDex should prioritize:
+bmd-store should prioritize:
 - reusable tools
 - reference evidence for validated workflows
 - templates
 - publicly shareable operational guidance for externally managed infrastructure
 - troubleshooting knowledge
-- supporting computational standards outside the core BMD Compute VASP generation pipeline
+- supporting computational standards outside the core bmd-compute VASP generation pipeline
 - curated scientific datasets
 
-BMDex should avoid becoming:
+bmd-store should avoid becoming:
 - a dump of active project files
 - a collection of temporary notebooks
 - a storage location for large calculation outputs
@@ -148,7 +149,7 @@ BMDex should avoid becoming:
 
 ## Public Repository Safety
 
-BMDex content must be appropriate for public access. Do not commit credentials,
+bmd-store content must be appropriate for public access. Do not commit credentials,
 deployment secrets, private keys, personal records, unpublished research or
 collaborator material without publication approval, proprietary datasets
 without redistribution permission, or licensed VASP `POTCAR`/PAW potential

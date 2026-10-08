@@ -1,6 +1,6 @@
 # VASP
 
-BMD Lab VASP supporting assets: reference calculation standards,
+Burton Materials Discovery Lab VASP supporting assets: reference calculation standards,
 reusable input examples, runnable examples, evidence, and practical VASP
 utility scripts.
 
@@ -8,14 +8,14 @@ Some details describe TAU PowerSLURM execution and licensed VASP
 pseudopotential access. Those details are current operational conventions, not
 lab-controlled cluster behavior.
 
-These files support manual/reference VASP work and BMDex evidence records. They
-do not define BMD Compute runtime behavior unless BMD Compute explicitly
-consumes them. BMD Compute's backend modules and producer contracts remain the
+These files support manual/reference VASP work and bmd-store evidence records. They
+do not define bmd-compute runtime behavior unless bmd-compute explicitly
+consumes them. bmd-compute's backend modules and producer contracts remain the
 authority for the core BMD VASP data-generation pipeline.
 
 Status:
 
-- validated operational guidance for current BMD Lab VASP practice
+- validated operational guidance for current Burton Materials Discovery Lab VASP practice
 - reusable input examples are starting points, not universal production settings
 - cluster module names, partitions, accounts, and POTCAR paths may change
 
@@ -58,7 +58,7 @@ target property.
 
 ## POTCAR Policy
 
-Actual `POTCAR` files must not be committed to BMDex.
+Actual `POTCAR` files must not be committed to bmd-store.
 
 Use `POTCAR.spec` files instead. The order of entries in `POTCAR.spec` must
 match the species ordering in `POSCAR`.
@@ -180,7 +180,7 @@ Concrete validation evidence records live under `evidence/`.
 
 Curated VASP contextual reference records live under `contextual_reference/`.
 These records provide sourced domain context for later evidence synthesis. They
-do not diagnose particular calculations and do not define BMD Compute runtime
+do not diagnose particular calculations and do not define bmd-compute runtime
 methodology.
 
 Query local contextual reference records with:

@@ -57,11 +57,11 @@ The crustal-abundance values in `earth-abundance.yaml` were transcribed from:
 > Haynes, W. M. (Ed.). *CRC Handbook of Chemistry and Physics*. CRC Press, 2016.
 
 The numerical values are represented here in a machine-readable YAML format
-for use in BMDex. The original CRC text, tables, formatting, and other
+for use in bmd-store. The original CRC text, tables, formatting, and other
 copyrighted material are not reproduced.
 
-The YAML representation and associated BMDex software are distributed under
-the BMDex repository license. The underlying scientific data remain attributed
+The YAML representation and associated bmd-store software are distributed under
+the bmd-store repository license. The underlying scientific data remain attributed
 to the source above.
 
 The original spreadsheet used in earlier BMD workflows has been replaced by

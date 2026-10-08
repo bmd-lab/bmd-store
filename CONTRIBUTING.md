@@ -1,12 +1,12 @@
-# Contributing to BMDex
+# Contributing to bmd-store
 
-BMDex is maintained for materials-science researchers. Contributions should be
+bmd-store is maintained for materials-science researchers. Contributions should be
 focused, scientifically clear, and easy for another student to review and
 reuse.
 
 ## Basic Workflow
 
-1. Clone BMDex and create a Python environment as described in `README.md`.
+1. Clone bmd-store and create a Python environment as described in `README.md`.
 2. Create a focused branch from the current `main` branch.
 3. Make one coherent change and update the nearest relevant documentation.
 4. Run the full test suite and any checks relevant to the changed tool or data.

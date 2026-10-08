@@ -1,9 +1,9 @@
 # Domain Context Tools
 
-This directory contains read-only producers for curated BMDex contextual
+This directory contains read-only producers for curated bmd-store contextual
 reference knowledge.
 
-The current producer queries local BMDex JSON records and writes JSON-safe
+The current producer queries local bmd-store JSON records and writes JSON-safe
 contextual reference evidence:
 
 ```bash
@@ -48,7 +48,7 @@ malformed values return an `invalid_query` error rather than an empty result.
 
 ## Observed-Pattern Vocabulary
 
-BMDex owns the identifiers used for run observations:
+bmd-store owns the identifiers used for run observations:
 `vasp/contextual_reference/observed_patterns.json` defines each identifier and
 its limitations. Records may list only these identifiers in
 `applicability.relevant_observed_patterns`, and queries may send only these
@@ -73,6 +73,6 @@ record's patterns that the query supplied. An empty
 match, so consumers must not describe the match as supported by trajectory
 evidence.
 
-BMDex provides reference context. BMD Agent performs evidence synthesis and
-diagnosis. BMD Compute owns executable calculation methodology for the core
+bmd-store provides reference context. bmd-check performs evidence synthesis and
+diagnosis. bmd-compute owns executable calculation methodology for the core
 VASP data-generation pipeline.

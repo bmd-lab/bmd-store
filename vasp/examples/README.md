@@ -13,7 +13,7 @@ Status:
 - `KPOINTS.example`: minimal automatic mesh example for adaptation
 - `POTCAR.spec.example`: repository-safe pseudopotential specification example
 
-No BMDex validation evidence record currently covers these INCAR files.
+No bmd-store validation evidence record currently covers these INCAR files.
 Validation evidence records live under `../evidence/`.
 
 ## Reusable Inputs
@@ -109,4 +109,4 @@ PBE_64
 ```
 
 The order of entries must match the species ordering in `POSCAR`. Actual
-`POTCAR` files must never be committed to BMDex.
+`POTCAR` files must never be committed to bmd-store.

@@ -75,5 +75,5 @@ data here under `tools/`.
   before drawing scientific conclusions.
 - `generate_frameworks_list.py` writes summary files into processed prototype
   folders; review user settings before running it on curated data.
-- The prototype collection is original BMD Lab work approved for publication;
+- The prototype collection is original Burton Materials Discovery Lab work approved for publication;
   Materials Project remains the attributed source of the structures analyzed.

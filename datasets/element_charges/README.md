@@ -1,6 +1,6 @@
 # Element-Charge Datasets
 
-Canonical element-charge datasets used by BMDex composition tools and
+Canonical element-charge datasets used by bmd-store composition tools and
 workflows.
 
 Canonical data:
@@ -11,7 +11,7 @@ element-charge copies or compatibility pointer directories.
 
 Status:
 - publication-backed reference dataset
-- validated for practical BMDex composition-generation workflows
+- validated for practical bmd-store composition-generation workflows
 
 This dataset contains the 84 representative oxidation states proposed in:
 
@@ -62,12 +62,12 @@ for inorganic materials workflows.
 
 This dataset derives from the earlier:
 - `electroneutral_match`
-workflow developed within the BMD Lab.
+workflow developed within the Burton Materials Discovery Lab.
 
 Original source:
 - `https://github.com/bmd-lab/electroneutral_match`
 
-Within BMDex, the dataset serves as:
+Within bmd-store, the dataset serves as:
 - a reusable compositional reasoning resource
 - a foundation for electroneutral composition generation
 - a bridge between oxidation-state heuristics and computational materials workflows

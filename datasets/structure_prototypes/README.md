@@ -22,7 +22,7 @@ By analyzing **23,160 experimentally observed thermodynamic ground-state inorgan
 
 Current dataset status:
 
-* original BMD Lab structure-prototype work approved by the repository owner
+* original Burton Materials Discovery Lab structure-prototype work approved by the repository owner
   for publication
 * useful for structure-prototype exploration under the documented scientific
   limitations
@@ -64,7 +64,7 @@ O  [0.5 0.5 0.5]
 
 ## Repository Role
 
-This dataset is a canonical BMDex scientific dataset.
+This dataset is a canonical bmd-store scientific dataset.
 
 Reusable code for:
 
@@ -115,5 +115,5 @@ Primary dependency:
 * Structure matching depends on the geometric matching methodology used during dataset generation.
 * Structure-matching tolerances should be reviewed before using the dataset as
   evidence for a specific scientific claim.
-* The prototype collection is original BMD Lab work approved for publication;
+* The prototype collection is original Burton Materials Discovery Lab work approved for publication;
   Materials Project remains the attributed source of the structures analyzed.
